@@ -11,4 +11,13 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <ProjectReference Include="..\PracticeCodeMVC.Application\PracticeCodeMVC.Application.csproj" />
+    <ProjectReference Include="..\PracticeCodeMVC.Data.EF\PracticeCodeMVC.Data.EF.csproj" />
+    <ProjectReference Include="..\PracticeCodeMVC.Data\PracticeCodeMVC.Data.csproj" />
+    <ProjectReference Include="..\PracticeCodeMVC.Infrastructure\PracticeCodeMVC.Infrastructure.csproj" />
+    <ProjectReference Include="..\PracticeCodeMVC.Utilities\PracticeCodeMVC.Utilities.csproj" />
+  </ItemGroup>
+
 </Project>

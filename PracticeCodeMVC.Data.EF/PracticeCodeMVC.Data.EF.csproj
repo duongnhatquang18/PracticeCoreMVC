@@ -10,4 +10,10 @@
     <Folder Include="Repositories\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PracticeCodeMVC.Data\PracticeCodeMVC.Data.csproj" />
+    <ProjectReference Include="..\PracticeCodeMVC.Infrastructure\PracticeCodeMVC.Infrastructure.csproj" />
+    <ProjectReference Include="..\PracticeCodeMVC.Utilities\PracticeCodeMVC.Utilities.csproj" />
+  </ItemGroup>
+
 </Project>

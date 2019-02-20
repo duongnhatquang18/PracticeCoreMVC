@@ -11,4 +11,10 @@
     <Folder Include="ViewModels\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PracticeCodeMVC.Data.EF\PracticeCodeMVC.Data.EF.csproj" />
+    <ProjectReference Include="..\PracticeCodeMVC.Data\PracticeCodeMVC.Data.csproj" />
+    <ProjectReference Include="..\PracticeCodeMVC.Utilities\PracticeCodeMVC.Utilities.csproj" />
+  </ItemGroup>
+
 </Project>
