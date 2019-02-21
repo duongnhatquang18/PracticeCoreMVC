@@ -1,0 +1,136 @@
+Design overview database. 
+
+ProductCategory
+	Id 
+    Alias
+	Name
+	ParentID
+	Seo
+	SortBy
+	Status
+Product
+	Id	
+	Name
+	Alias
+	Seo
+	ProductCategoryID
+	CreatedDate
+	Status
+	Image
+	Price
+	PromotionPrice
+	Quantity
+	HotFlag
+	NewFlag
+
+Bill
+	CustomerID
+	CustomerName
+	CustomerAddress
+	CustomerPhone
+	CustomerEmail
+	BillDate
+	Status
+BillDetail
+	BillID
+	ProductID
+	Quantity
+	Price
+
+Blog
+	Id
+	Name
+	Seo
+	Description
+	Content
+	Image
+	Status
+Menu
+	Id
+	Name
+	Url
+	Css
+	ParentID
+	Status
+	SortingOrder
+Slide
+	Id
+	Name
+	Url
+	Image
+	Text
+	Sort
+	Status
+
+Banner
+Brand
+	Id
+	Name
+	Image
+	Status
+Footer
+	Id
+	Content
+Language
+	Id
+	Name
+	Default
+	
+ProductTag
+	ProductID
+	TagID
+BlogTag
+	BlogID
+	TagID
+Tag
+	Id
+	Name
+	Type
+	
+
+AdvertisementPage
+	Id
+	Name
+AdvertisementPosition
+	Id
+	PageID
+	Name
+Advertisement
+	PositionID
+	Image
+	Url
+	Status
+
+
+Page
+	Id
+	Name
+	Content
+Feedback
+	Name
+	Email
+	Phone
+	Content
+	CreatedDate
+	Status
+Contact
+	Id
+	Name
+	Address
+	Phone
+	Website
+	Email
+	Longtitude
+	Latitude
+
+SystemConfig
+	Id
+	Value1
+	Value2
+	Value3
+	Value4
+	
+User
+UserRole
+Role
+
