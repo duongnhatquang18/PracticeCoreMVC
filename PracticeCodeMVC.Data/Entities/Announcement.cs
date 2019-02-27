@@ -7,14 +7,16 @@ using System.Text;
 
 namespace PracticeCodeMVC.Data.Entities
 {
-    public class FeedBack: DomainEntity<int>, IDateTracking, ISwitchable
+    public class Announcement : DomainEntity<string>, IDateTracking, ISwitchable
     {
-        public string Name { get; set; }
-        public string Email { get; set; }
-        public string Message { get; set; }
+        public string Title { get; set; }
+        public string Content { get; set; }
 
         public Status status { get; set; }
         public DateTime DateCreated { get; set; }
         public DateTime DateModifined { get; set; }
+
+        public string UserId { set; get; }
+        public virtual ICollection<AnnouncementUser> AnnouncementUsers { get; set; }
     }
 }

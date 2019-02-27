@@ -1,11 +1,13 @@
-﻿using PracticeCodeMVC.Infrastructure.SharedKenel;
+﻿using PracticeCodeMVC.Data.Enums;
+using PracticeCodeMVC.Data.Interfaces;
+using PracticeCodeMVC.Infrastructure.SharedKenel;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace PracticeCodeMVC.Data.Entities
 {
-    public class Contact : DomainEntity<int>
+    public class Contact : DomainEntity<int>, ISwitchable
     {
         public string Name { get; set; }
 
@@ -17,8 +19,9 @@ namespace PracticeCodeMVC.Data.Entities
 
         public string Email { get; set; }
 
-        public string Longtitude { get; set; }
+        public double? Longtitude { get; set; }
 
-        public string Latitude { get; set; }
+        public double? Latitude { get; set; }
+        public Status status { get; set; }
     }
 }

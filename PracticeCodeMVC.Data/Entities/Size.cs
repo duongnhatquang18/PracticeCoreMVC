@@ -1,11 +1,12 @@
 ﻿using PracticeCodeMVC.Infrastructure.SharedKenel;
+using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace PracticeCodeMVC.Data.Entities
 {
-    public class Tag : DomainEntity<int>
+    public class Size : DomainEntity<int>
     {
         public string Name { get; set; }
-        public string Type { get; set; }
     }
 }

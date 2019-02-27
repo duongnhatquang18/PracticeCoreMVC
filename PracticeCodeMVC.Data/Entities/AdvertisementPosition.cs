@@ -5,9 +5,13 @@ using System.Text;
 
 namespace PracticeCodeMVC.Data.Entities
 {
-    public class AdvertisementPosition :DomainEntity<int>
+    public class AdvertisementPosition :DomainEntity<string>
     {
         public int PageId { get; set; }
         public string Name { get; set; }
+
+        public virtual AdvertisementPage AdvertistmentPage { get; set; }
+
+        public virtual ICollection<Advertisement> Advertistments { get; set; }
     }
 }

@@ -11,8 +11,11 @@ namespace PracticeCodeMVC.Data.Entities
     {
         public string Name { get; set; }
         public string Description { get; set; }
-
         public string Content { get; set; }
+        public bool? HomeFlag { get; set; }
+        public bool? HotFlag { get; set; }
+        public int? ViewCount { set; get; }
+        public string Tags { get; set; }
 
         public string Image { get; set; }
         public Status status { get; set; }
@@ -22,6 +25,5 @@ namespace PracticeCodeMVC.Data.Entities
         public string SeoDescription { get; set; }
         public DateTime DateCreated { get; set; }
         public DateTime DateModifined { get; set; }
-        public virtual ICollection<Tag> Tags { get; set; }
     }
 }

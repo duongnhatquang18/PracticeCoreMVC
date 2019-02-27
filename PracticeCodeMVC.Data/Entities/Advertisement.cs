@@ -7,11 +7,18 @@ using System.Text;
 
 namespace PracticeCodeMVC.Data.Entities
 {
-    public class Advertisement :DomainEntity<int>, ISwitchable
+    public class Advertisement :DomainEntity<int>, ISwitchable, ISortable, IDateTracking
     {
+        public string Name { get; set; }
+        public string Description { get; set; }
         public int PositionId { get; set; }
         public string Image { get; set; }
         public string Url { get; set; }
         public Status status { get; set; }
+        public int SortOrder { get; set;}
+        public DateTime DateCreated { get; set;}
+        public DateTime DateModifined { get; set;}
+
+        public virtual AdvertisementPosition AdvertistmentPosition { get; set; }
     }
 }

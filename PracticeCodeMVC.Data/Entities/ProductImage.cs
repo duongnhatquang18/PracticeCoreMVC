@@ -5,12 +5,12 @@ using System.Text;
 
 namespace PracticeCodeMVC.Data.Entities
 {
-    public class ProductTag : DomainEntity<int>
+    public class ProductImage:DomainEntity<int>
     {
         public int ProductId { get; set; }
-        public int TagId { get; set; }
+        public string Path { get; set; }
+        public string Caption { get; set; }
 
-        public virtual Product Product { set; get; }
-        public virtual Tag Tag { set; get; }
+        public virtual Product Product { get; set; }
     }
 }

@@ -7,10 +7,14 @@ using System.Text;
 
 namespace PracticeCodeMVC.Data.Entities
 {
-    public class Brand : DomainEntity<int>, ISwitchable
+    public class Function : DomainEntity<string>, ISwitchable, ISortable
     {
-        public string Name { get; set; }
-        public string Image { get; set; }
+        public string Name { set; get; }
+        public string URL { set; get; }
+        public string ParentId { set; get; }
+        public string IconCss { get; set; }
+
+        public int SortOrder { get; set; }
         public Status status { get; set; }
     }
 }

@@ -9,7 +9,7 @@ namespace PracticeCodeMVC.Data.Entities
 {
     public class Bill : DomainEntity<int>, IDateTracking, ISwitchable
     {
-        public int CustomerID { get; set; }
+        public string CustomerId { set; get; }
 
         public string CustomerName { get; set; }
 
@@ -19,12 +19,15 @@ namespace PracticeCodeMVC.Data.Entities
 
         public string CustomerEmail { get; set; }
 
-        public DateTime BillDate { get; set; }
+        public string CustomerMessage { set; get; }
 
+         
         public Status status { get; set; }
         public DateTime DateCreated { get; set; }
         public DateTime DateModifined { get; set; }
 
-        public virtual ICollection<BillDetail> Bills { get; set;} 
+        public virtual AppUser User { set; get; }
+
+        public virtual ICollection<BillDetail> BillDetails { get; set;} 
     }
 }
