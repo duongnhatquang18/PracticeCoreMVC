@@ -17,5 +17,7 @@ namespace PracticeCodeMVC.Data.Entities
         public Status status { get; set; }
         public DateTime DateCreated { get; set; }
         public DateTime DateModifined { get; set; }
+
+        public virtual AnnouncementUser AnnouncementUser { get; set; }
     }
 }

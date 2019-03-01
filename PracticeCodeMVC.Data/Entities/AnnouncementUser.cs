@@ -14,6 +14,6 @@ namespace PracticeCodeMVC.Data.Entities
         public bool? HasRead { get; set; }
 
         public virtual AppUser AppUser { get; set; }
-        public virtual ICollection<Announcement> Announcements { get; set; }
+        public virtual Announcement Announcement { get; set; }
     }
 }
