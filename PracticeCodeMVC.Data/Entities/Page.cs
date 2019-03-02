@@ -12,6 +12,6 @@ namespace PracticeCodeMVC.Data.Entities
         public string Name { get; set; }
         public string Alias { set; get; }
         public string Content { get; set; }
-        public Status status { get; set; }
+        public Status Status { get; set; }
     }
 }

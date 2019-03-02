@@ -22,6 +22,6 @@ namespace PracticeCodeMVC.Data.Entities
         public double? Longtitude { get; set; }
 
         public double? Latitude { get; set; }
-        public Status status { get; set; }
+        public Status Status { get; set; }
     }
 }

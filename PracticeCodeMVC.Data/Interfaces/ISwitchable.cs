@@ -7,6 +7,6 @@ namespace PracticeCodeMVC.Data.Interfaces
 {
     public interface ISwitchable
     {
-        Status status { get; set; }
+        Status Status { get; set; }
     }
 }

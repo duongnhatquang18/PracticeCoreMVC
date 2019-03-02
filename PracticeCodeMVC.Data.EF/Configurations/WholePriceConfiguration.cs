@@ -11,8 +11,8 @@ namespace PracticeCodeMVC.Data.EF.Configurations
     {
         public void Configure(EntityTypeBuilder<WholePrice> builder)
         {
-            builder.Entity<WholePrice>().ToTable("WholePrices");
-            builder.Entity<WholePrice>().HasOne(x => x.Product)
+            builder.ToTable("WholePrices");
+            builder.HasOne(x => x.Product)
                                         .WithOne(y => y.WholePrice)
                                         .HasForeignKey<WholePrice>(x => x.ProductId);
         }

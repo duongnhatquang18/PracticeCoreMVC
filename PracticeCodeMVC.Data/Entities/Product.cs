@@ -28,7 +28,7 @@ namespace PracticeCodeMVC.Data.Entities
         public string SeoDescription { get; set; }
         public string SeoKeyWords { get; set; }
         public string SeoPageTitle { get; set; }
-        public Status status { get; set; }
+        public Status Status { get; set; }
 
         public virtual ProductCategory ProductCategory { get; set; }
         public virtual BillDetail BillDetail { get; set; }

@@ -23,7 +23,7 @@ namespace PracticeCodeMVC.Data.Entities
         public string SeoKeyWords { get; set; }
         public string SeoPageTitle { get; set; }
         public int SortOrder { get; set; }
-        public Status status { get; set; }
+        public Status Status { get; set; }
 
         public virtual ICollection<Product> Products { get; set; }
     }

@@ -14,7 +14,7 @@ namespace PracticeCodeMVC.Data.Entities
         public int PositionId { get; set; }
         public string Image { get; set; }
         public string Url { get; set; }
-        public Status status { get; set; }
+        public Status Status { get; set; }
         public int SortOrder { get; set;}
         public DateTime DateCreated { get; set;}
         public DateTime DateModifined { get; set;}

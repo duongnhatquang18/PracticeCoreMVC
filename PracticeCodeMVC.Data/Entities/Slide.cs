@@ -13,7 +13,7 @@ namespace PracticeCodeMVC.Data.Entities
         public string Content { set; get; }
         public string GroupAlias { get; set; }
 
-        public Status status { get; set; }
+        public Status Status { get; set; }
         public int SortOrder { get; set; }
     }
 }

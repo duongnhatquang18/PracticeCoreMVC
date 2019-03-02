@@ -15,6 +15,6 @@ namespace PracticeCodeMVC.Data.Entities
         public DateTime? Value3 { get; set; }
         public bool? Value4 { get; set; }
         public decimal? Value5 { get; set; }
-        public Status status { get; set; }
+        public Status Status { get; set; }
     }
 }

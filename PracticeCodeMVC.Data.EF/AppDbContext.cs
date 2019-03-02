@@ -29,7 +29,7 @@ namespace PracticeCodeMVC.Data.EF
         public DbSet<Color> colors;
         public DbSet<Contact> contacts;
         public DbSet<FeedBack> feedBacks;
-        public DbSet<Footer> footer;
+        public DbSet<Footer> footers;
         public DbSet<Function> functions;
         public DbSet<Language> languages;
         public DbSet<Page> pages;

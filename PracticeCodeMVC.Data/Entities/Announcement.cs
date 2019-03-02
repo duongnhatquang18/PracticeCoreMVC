@@ -12,7 +12,7 @@ namespace PracticeCodeMVC.Data.Entities
         public string Title { get; set; }
         public string Content { get; set; }
 
-        public Status status { get; set; }
+        public Status Status { get; set; }
         public DateTime DateCreated { get; set; }
         public DateTime DateModifined { get; set; }
 

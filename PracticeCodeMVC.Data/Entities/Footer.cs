@@ -5,7 +5,7 @@ using System.Text;
 
 namespace PracticeCodeMVC.Data.Entities
 {
-    public class Footer : DomainEntity<int>
+    public class Footer : DomainEntity<string>
     {
         public string Content { get; set; }
     }

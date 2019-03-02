@@ -18,7 +18,7 @@ namespace PracticeCodeMVC.Data.Entities
         public string Tags { get; set; }
 
         public string Image { get; set; }
-        public Status status { get; set; }
+        public Status Status { get; set; }
         public string SeoPageTitle { get; set; }
         public string SeoAlias { get; set; }
         public string SeoKeyWords { get; set; }

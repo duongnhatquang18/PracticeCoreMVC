@@ -12,6 +12,6 @@ namespace PracticeCodeMVC.Data.Entities
         public string Name { get; set; }
         public bool IsDefault { get; set; }
         public string Resources { get; set; }
-        public Status status { get; set; }
+        public Status Status { get; set; }
     }
 }

@@ -13,7 +13,7 @@ namespace PracticeCodeMVC.Data.Entities
         public string Email { get; set; }
         public string Message { get; set; }
 
-        public Status status { get; set; }
+        public Status Status { get; set; }
         public DateTime DateCreated { get; set; }
         public DateTime DateModifined { get; set; }
     }
