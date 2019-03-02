@@ -19,5 +19,6 @@ namespace PracticeCodeMVC.Data.Entities
         public DateTime DateModifined { get; set; }
 
         public virtual AnnouncementUser AnnouncementUser { get; set; }
+        public virtual ICollection<Bill> Bills { get; set; }
     }
 }

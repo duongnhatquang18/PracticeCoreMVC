@@ -8,5 +8,8 @@ namespace PracticeCodeMVC.Data.Entities
     public class Size : DomainEntity<int>
     {
         public string Name { get; set; }
+
+        public virtual BillDetail BillDetail { get; set; }
+        public virtual ProductQuantity ProductQuantity { get; set; }
     }
 }

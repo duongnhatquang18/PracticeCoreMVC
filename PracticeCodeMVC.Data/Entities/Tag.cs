@@ -7,5 +7,9 @@ namespace PracticeCodeMVC.Data.Entities
     {
         public string Name { get; set; }
         public string Type { get; set; }
+
+        public virtual ICollection<BlogTag> BlogTags { get; set; }
+
+        public virtual ICollection<ProductTag> ProductTags { get; set; }
     }
 }

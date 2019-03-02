@@ -2,6 +2,7 @@
 using PracticeCodeMVC.Data.Interfaces;
 using PracticeCodeMVC.Infrastructure.SharedKenel;
 using System;
+using System.Collections.Generic;
 
 namespace PracticeCodeMVC.Data.Entities
 {
@@ -30,5 +31,12 @@ namespace PracticeCodeMVC.Data.Entities
         public Status status { get; set; }
 
         public virtual ProductCategory ProductCategory { get; set; }
+        public virtual BillDetail BillDetail { get; set; }
+
+        public virtual WholePrice WholePrice { get; set; }
+
+        public virtual ICollection<ProductImage> ProductImages { get; set; }
+        public virtual ICollection<ProductQuantity> ProductQuantities { get; set; }
+        public virtual ICollection<ProductTag> ProductTags { get; set; }
     }
 }

@@ -25,5 +25,7 @@ namespace PracticeCodeMVC.Data.Entities
         public string SeoDescription { get; set; }
         public DateTime DateCreated { get; set; }
         public DateTime DateModifined { get; set; }
+        
+        public virtual ICollection<BlogTag> BlogTags { get; set; }
     }
 }

@@ -9,6 +9,7 @@ namespace PracticeCodeMVC.Data.Entities
 {
     public class SystemConfig:DomainEntity<string>, ISwitchable
     {
+        public string Name { get; set; }
         public string Value1 { get; set; }
         public int? Value2 { get; set; }
         public DateTime? Value3 { get; set; }

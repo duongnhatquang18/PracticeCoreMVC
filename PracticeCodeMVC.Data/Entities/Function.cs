@@ -16,5 +16,7 @@ namespace PracticeCodeMVC.Data.Entities
 
         public int SortOrder { get; set; }
         public Status status { get; set; }
+
+        public virtual Permissions Permissions { get; set; }
     }
 }

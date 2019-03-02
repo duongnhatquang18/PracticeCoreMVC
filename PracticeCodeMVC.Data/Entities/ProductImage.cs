@@ -5,7 +5,7 @@ using System.Text;
 
 namespace PracticeCodeMVC.Data.Entities
 {
-    public class ProductImage:DomainEntity<int>
+    public class ProductImage : DomainEntity<int>
     {
         public int ProductId { get; set; }
         public string Path { get; set; }
