@@ -14,7 +14,7 @@ namespace PracticeCodeMVC.Data.EF.Configurations
             builder.ToTable("Functions");
             builder.Property(x => x.Name).HasMaxLength(128).IsRequired();
             builder.Property(x => x.URL).HasMaxLength(250).IsRequired();
-            builder.Property(x => x.ParentId).HasMaxLength(128).IsRequired();
+            builder.Property(x => x.ParentId).HasMaxLength(128);
         }
     }
 }

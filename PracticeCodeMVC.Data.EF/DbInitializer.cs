@@ -54,10 +54,15 @@ namespace PracticeCodeMVC.Data.EF
                     FullName = "Administrator",
                     Email = "admin@gmail.com",
                     Balance = 0,
+                    DateCreated = DateTime.Now,
+                    DateModifined = DateTime.Now
                 }, "123654$");
                 var user = await _userManager.FindByNameAsync("admin");
                 await _userManager.AddToRoleAsync(user, "Admin");
             }
+
+            _context.Database.EnsureCreated();
+
             if (_context.functions.Count() == 0)
             {
                 _context.functions.AddRange(new List<Function>()

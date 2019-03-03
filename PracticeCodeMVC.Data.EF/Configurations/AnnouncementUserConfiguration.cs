@@ -12,16 +12,13 @@ namespace PracticeCodeMVC.Data.EF.Configurations
         public void Configure(EntityTypeBuilder<AnnouncementUser> builder)
         {
             builder.ToTable("AnnouncementUsers");
-            builder.Property(x => x.AnnouncementId).HasMaxLength(128).IsRequired();
+            builder.Property(x => x.AnnouncementId).IsRequired();
             builder.Property(x => x.UserId).HasMaxLength(450).IsRequired();
 
             builder.HasOne(x => x.Announcement)
                    .WithMany(y => y.AnnouncementUsers)
                    .HasForeignKey(x => x.AnnouncementId);
 
-            builder.HasOne(x => x.AppUser)
-                   .WithOne(y => y.AnnouncementUser)
-                   .HasForeignKey<AnnouncementUser>(x => x.UserId);
         }
     }
 }

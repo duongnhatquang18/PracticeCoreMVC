@@ -14,7 +14,7 @@ namespace PracticeCodeMVC.Data.EF.Configurations
             builder.Property(x => x.Description).HasMaxLength(250);
             builder.Property(x => x.Image).HasMaxLength(250);
             builder.Property(x => x.Url).HasMaxLength(250);
-            builder.Property(x => x.PositionId).HasMaxLength(20).IsRequired();
+            builder.Property(x => x.PositionId).IsRequired();
 
             builder.HasOne(x => x.AdvertistmentPosition)
                    .WithMany(y => y.Advertistments)

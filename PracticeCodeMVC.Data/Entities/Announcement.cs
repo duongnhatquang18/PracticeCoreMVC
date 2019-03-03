@@ -16,7 +16,7 @@ namespace PracticeCodeMVC.Data.Entities
         public DateTime DateCreated { get; set; }
         public DateTime DateModifined { get; set; }
 
-        public string UserId { set; get; }
+        public Guid UserId { set; get; }
         public virtual ICollection<AnnouncementUser> AnnouncementUsers { get; set; }
     }
 }

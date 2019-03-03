@@ -9,6 +9,47 @@ namespace PracticeCodeMVC.Data.Entities
 {
     public class Blog : DomainEntity<int>, IDateTracking, IHasSeoMetaData, ISwitchable
     {
+        public Blog() { }
+        public Blog(string name, string thumbnailImage,
+           string description, string content, bool? homeFlag, bool? hotFlag,
+           string tags, Status status, string seoPageTitle,
+           string seoAlias, string seoMetaKeyword,
+           string seoMetaDescription)
+        {
+            Name = name;
+            Image = thumbnailImage;
+            Description = description;
+            Content = content;
+            HomeFlag = homeFlag;
+            HotFlag = hotFlag;
+            Tags = tags;
+            Status = status;
+            SeoPageTitle = seoPageTitle;
+            SeoAlias = seoAlias;
+            SeoKeyWords = seoMetaKeyword;
+            SeoDescription = seoMetaDescription;
+        }
+
+        public Blog(int id, string name, string thumbnailImage,
+             string description, string content, bool? homeFlag, bool? hotFlag,
+             string tags, Status status, string seoPageTitle,
+             string seoAlias, string seoMetaKeyword,
+             string seoMetaDescription)
+        {
+            Id = id;
+            Name = name;
+            Image = thumbnailImage;
+            Description = description;
+            Content = content;
+            HomeFlag = homeFlag;
+            HotFlag = hotFlag;
+            Tags = tags;
+            Status = status;
+            SeoPageTitle = seoPageTitle;
+            SeoAlias = seoAlias;
+            SeoKeyWords = seoMetaKeyword;
+            SeoDescription = seoMetaDescription;
+        }
         public string Name { get; set; }
         public string Description { get; set; }
         public string Content { get; set; }

@@ -13,7 +13,7 @@ namespace PracticeCodeMVC.Data.EF.Configurations
         {
             builder.ToTable("Permissions");
             builder.Property(x => x.RoleId).HasMaxLength(450).IsRequired();
-            builder.Property(x => x.FunctionId).HasMaxLength(128).IsRequired();
+            builder.Property(x => x.FunctionId).IsRequired();
             builder.HasOne(x => x.AppRole)
                    .WithOne(y => y.Permissions)
                    .HasForeignKey<Permissions>(x => x.RoleId);

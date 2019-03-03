@@ -7,7 +7,7 @@ namespace PracticeCodeMVC.Data.Entities
 {
     public class Permissions:DomainEntity<int>
     {
-        public string RoleId { get; set; }
+        public Guid RoleId { get; set; }
         public string FunctionId { get; set; }
         public bool CanCreate { set; get; }
         public bool CanRead { set; get; }

@@ -10,10 +10,9 @@ namespace PracticeCodeMVC.Data.Entities
     public class AnnouncementUser :DomainEntity<int>
     {
         public string AnnouncementId { get; set; }
-        public string UserId { get; set; }
+        public Guid UserId { get; set; }
         public bool? HasRead { get; set; }
-
-        public virtual AppUser AppUser { get; set; }
+        
         public virtual Announcement Announcement { get; set; }
     }
 }

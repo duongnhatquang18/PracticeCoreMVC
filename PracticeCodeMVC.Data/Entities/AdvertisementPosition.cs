@@ -7,7 +7,7 @@ namespace PracticeCodeMVC.Data.Entities
 {
     public class AdvertisementPosition :DomainEntity<string>
     {
-        public int PageId { get; set; }
+        public string PageId { get; set; }
         public string Name { get; set; }
 
         public virtual AdvertisementPage AdvertistmentPage { get; set; }
